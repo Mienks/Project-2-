@@ -1,0 +1,130 @@
+<html>
+    <title> Survey</title>
+        <h1 id="title">#SurveyFreeCodeCamp#</h1>
+         <link href="C:\Users\user\Desktop\project 1\project 2\style.css">
+    <style>
+        body {
+    background-image: url(https://images.unsplash.com/photo-1476958526483-36efcaa80b1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+h1 {
+    color:white;
+    text-align: center;
+    
+}
+#description{
+    text-align: center;
+    color:white;
+    
+}
+#survey-form {
+    color:white;
+    justify-content: center;
+}
+
+ label {
+     width:200px;
+     display:inline-block;
+ }
+    .label1{
+        margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+    }
+    .boxes{
+        display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    
+    form{
+        width:800px;
+        margin:auto;
+        padding:20px;
+        background:#283747 ;
+        font: size 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:white;
+    }
+        #submit{
+                color: white;
+                background:#154360
+        }
+        fieldset{
+            border:#283747 ;
+        }
+        #dropdown{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            font-size: 25px;
+        }
+        h1{
+            font-size:32px
+        }
+    </style>
+         <body>
+        <p id="description">Thank you for your your time:<p>
+        <div>
+            <form id="survey-form" type="text">
+          <fieldset><div class="label1"> <label for="name" id="name-label" >Name:</label><input type="text" id="name" placeholder="Enter your name.." required="true" class="boxes" ></div></fieldset>
+
+          <fieldset> <div class="label1"><label for="e-mail" id="email-label">E-mail:</label><input type="email"id="email", placeholder="Enter your e-mail.." required="true" class="boxes"></div></fieldset>
+
+          <fieldset><div class="label1"> <label for="number" id="number-label">Number:</label><input type="number" min="10" max="10" id="number" placeholder="Enter your number.." class="boxes"></div></fieldset>
+        
+          <fieldset>
+            <label for="dropdown">Select your favourite:</label><br/>
+            <select id="dropdown" class="boxes">
+                <option>Google/Chrome</option>
+                <option>You-tube</option>
+                <option>Internet Explorer</option>
+            </select>
+        </fieldset>
+       
+        <fieldset>
+        <h4>Please select one of the following:</h4>
+
+        <input type="radio" name="gender" value="male"/> Male
+        <br/>
+        <input type="radio" name="gender" value="female" /> Female
+        <br/>
+        </fieldset>
+        
+        <fieldset>
+            <h4>Select your favourite devices:</h4>
+            <label><input type="checkbox" name="best" value="laptop">Laptop</label>
+            <br/>
+            <label><input type="checkbox" name="best" value="I-pad">I-pad</label>
+            <br/>
+            <label><input type="checkbox" name="best" value="PC">PC</label>
+            <br/>
+            <label><input type="checkbox" name="best" value="Android">Android</label>
+            </fieldset>
+            
+            <fieldset>
+               <h4>Comments:</h4>
+                <textarea id="comments"  class="boxes" rows="20" cols="181" placeholder="Please add any comments HERE"></textarea>
+                <br/>
+             <button type="submit" id="submit" class="boxes">
+                    Submit
+                    </button><br/>
+                
+            </fieldset>
+            </form>
+            </div>
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+
+        </script>
+
+</body>
+</html>
